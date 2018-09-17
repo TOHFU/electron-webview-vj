@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Browser Demo</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <div class="main">
+    <webview class="browser" src="https://electronjs.org/" autosize="on" preload="./assets/js/webview.js"></webview>
+    <div class="overlay js-overlay">
+      <div class="overlay__inputarea">
+        <input type="text" class="overlay__input overlay__input--small js-input-url" value="https://electronjs.org/"></input>
+        <input type="text" class="overlay__input js-input-css" value="p {color: #FF0000;}" placeholder="insert css"></input>
+      </div>
+      <div class="overlay__logarea js-logarea">
+        <!-- <p class="log">log in here</p> -->
+      </div>
+    </div>
+    <div class="uiTools">
+      <div class="uiTools__urlBtn js-url-btn"></div>
+      <div class="uiTools__devBtn js-dev-btn"></div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="./assets/js/index.js"></script>
+</body>
+
+</html>
